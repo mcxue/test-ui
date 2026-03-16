@@ -1,0 +1,6 @@
+@use './element.scss';
+@use './variables.scss';
+@use './override.scss';
+
+// 导入 Element Plus 主题样式
+@use 'element-plus/theme-chalk/src/index.scss';
