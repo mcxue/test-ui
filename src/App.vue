@@ -2,7 +2,7 @@
   <el-config-provider namespace="ep">
     <div :class="currentTheme" class="app-container">
       <header class="app-header">
-        <h1>ALS UI 主题调试</h1>
+        <h1>TEST UI 主题调试</h1>
         <div class="theme-selector">
           <span>选择主题：</span>
           <el-radio-group v-model="currentTheme" size="large">
@@ -13,6 +13,10 @@
             <el-radio-button label="theme-gold">金色</el-radio-button>
             <el-radio-button label="theme-red">红色</el-radio-button>
           </el-radio-group>
+          <div class="dark-mode-toggle">
+            <el-switch v-model="isDarkMode" @change="toggleDarkMode" size="large"></el-switch>
+            <span>{{ isDarkMode ? '暗黑模式' : '亮色模式' }}</span>
+          </div>
         </div>
       </header>
 
@@ -331,11 +335,26 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { ArrowDown } from '@element-plus/icons-vue'
 
 const currentTheme = ref('')
+const isDarkMode = ref(false)
+
+// 初始化暗黑模式状态
+onMounted(() => {
+  isDarkMode.value = document.documentElement.classList.contains('dark')
+})
+
+// 切换暗黑模式
+const toggleDarkMode = () => {
+  if (isDarkMode.value) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+}
 
 // Checkbox
 const checkbox1 = ref(false)
@@ -470,10 +489,25 @@ const handleCancel = () => {
 .theme-selector {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .theme-selector span {
   margin-right: 10px;
+  color: var(--ep-text-color-regular);
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid var(--ep-border-color);
+}
+
+.dark-mode-toggle span {
+  margin-right: 0;
   color: var(--ep-text-color-regular);
 }
 

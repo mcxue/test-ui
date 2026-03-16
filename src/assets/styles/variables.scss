@@ -43,6 +43,47 @@
   --ep-box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12);
 }
 
+/* 暗黑模式 */
+html.dark {
+  --ep-color-primary: #409EFF;
+  --ep-color-primary-light-1: #66B1FF;
+  --ep-color-primary-light-2: #8CC5FF;
+  --ep-color-primary-light-3: #B3D8FF;
+  --ep-color-primary-light-4: #D9ECFF;
+  --ep-color-primary-light-5: #E6F7FF;
+  --ep-color-primary-dark-1: #337ECC;
+  --ep-color-primary-dark-2: #2666B3;
+  --ep-color-primary-dark-3: #194D80;
+  --ep-color-primary-dark-4: #0D3359;
+  --ep-color-success: #67C23A;
+  --ep-color-warning: #E6A23C;
+  --ep-color-danger: #F56C6C;
+  --ep-color-info: #909399;
+  
+  /* 文字颜色 */
+  --ep-text-color-primary: #ffffff;
+  --ep-text-color-regular: #e0e0e0;
+  --ep-text-color-secondary: #b0b0b0;
+  --ep-text-color-placeholder: #808080;
+  
+  /* 背景颜色 */
+  --ep-bg-color: #1a1a1a;
+  --ep-bg-color-page: #121212;
+  --ep-bg-color-overlay: #2c2c2c;
+  
+  /* 边框颜色 */
+  --ep-border-color: #3e3e3e;
+  --ep-border-color-light: #303030;
+  --ep-border-color-lighter: #242424;
+  --ep-border-color-extra-light: #1e1e1e;
+  
+  /* 阴影 */
+  --ep-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 6px rgba(0, 0, 0, 0.2);
+  --ep-box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
+  --ep-box-shadow-lighter: 0 0 12px rgba(0, 0, 0, 0.2);
+  --ep-box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 /* 绿色主题 */
 .theme-green {
   --ep-color-primary: #67C23A;
