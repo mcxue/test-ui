@@ -205,8 +205,31 @@
           <h2>Menu 菜单</h2>
           <div class="component-group">
             <el-menu :default-active="activeMenu" class="el-menu-demo" mode="horizontal">
-              <el-menu-item index="1">导航一</el-menu-item>
-              <el-menu-item index="2">导航二</el-menu-item>
+              <el-sub-menu index="1">
+                <template #title>导航一</template>
+                <el-menu-item index="1-1">子菜单1-1</el-menu-item>
+                <el-menu-item index="1-2">子菜单1-2</el-menu-item>
+                <el-menu-item index="1-3">子菜单1-3</el-menu-item>
+              </el-sub-menu>
+              <el-sub-menu index="2">
+                <template #title>导航二</template>
+                <el-menu-item index="2-1">子菜单2-1</el-menu-item>
+                <el-menu-item index="2-2">子菜单2-2</el-menu-item>
+              </el-sub-menu>
+              <el-menu-item index="3">导航三</el-menu-item>
+            </el-menu>
+            <el-menu :default-active="activeMenu" class="el-menu-demo" mode="vertical" style="width: 200px; margin-left: 30px;">
+              <el-sub-menu index="1">
+                <template #title>导航一</template>
+                <el-menu-item index="1-1">子菜单1-1</el-menu-item>
+                <el-menu-item index="1-2">子菜单1-2</el-menu-item>
+                <el-menu-item index="1-3">子菜单1-3</el-menu-item>
+              </el-sub-menu>
+              <el-sub-menu index="2">
+                <template #title>导航二</template>
+                <el-menu-item index="2-1">子菜单2-1</el-menu-item>
+                <el-menu-item index="2-2">子菜单2-2</el-menu-item>
+              </el-sub-menu>
               <el-menu-item index="3">导航三</el-menu-item>
             </el-menu>
           </div>
@@ -275,8 +298,7 @@
         <section class="test-section">
           <h2>Loading 加载</h2>
           <div class="component-group">
-            <el-button type="primary" @click="loading = true">显示加载</el-button>
-            <el-loading v-if="loading" fullscreen text="加载中..."></el-loading>
+            <el-card v-loading="true">--</el-card>
           </div>
         </section>
 

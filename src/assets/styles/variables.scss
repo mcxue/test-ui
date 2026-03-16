@@ -59,16 +59,30 @@
 
 /* 紫色主题 */
 .theme-purple {
-  --ep-color-primary: #909399;
-  --ep-color-primary-light-1: #a6a9ad;
-  --ep-color-primary-light-2: #bcc0c4;
-  --ep-color-primary-light-3: #d1d4d7;
-  --ep-color-primary-light-4: #e6e8ea;
-  --ep-color-primary-light-5: #f0f2f5;
-  --ep-color-primary-dark-1: #73767a;
-  --ep-color-primary-dark-2: #56595c;
-  --ep-color-primary-dark-3: #393b3e;
-  --ep-color-primary-dark-4: #1c1e1f;
+  --ep-color-primary: #9c27b0;
+  --ep-color-primary-light-1: #ab47bc;
+  --ep-color-primary-light-2: #ba68c8;
+  --ep-color-primary-light-3: #ce93d8;
+  --ep-color-primary-light-4: #e1bee7;
+  --ep-color-primary-light-5: #f3e5f5;
+  --ep-color-primary-dark-1: #7b1fa2;
+  --ep-color-primary-dark-2: #6a1b9a;
+  --ep-color-primary-dark-3: #4a148c;
+  --ep-color-primary-dark-4: #280659;
+}
+
+/* 阻塞主题 */
+.theme-blocked {
+  --ep-color-primary: #607d8b;
+  --ep-color-primary-light-1: #78909c;
+  --ep-color-primary-light-2: #90a4ae;
+  --ep-color-primary-light-3: #b0bec5;
+  --ep-color-primary-light-4: #cfd8dc;
+  --ep-color-primary-light-5: #eceff1;
+  --ep-color-primary-dark-1: #455a64;
+  --ep-color-primary-dark-2: #37474f;
+  --ep-color-primary-dark-3: #263238;
+  --ep-color-primary-dark-4: #1a237e;
 }
 
 /* 橙色主题 */
