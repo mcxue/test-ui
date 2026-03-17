@@ -73,7 +73,6 @@
           <h2>Date Picker 日期选择器</h2>
           <div class="component-group">
             <el-date-picker v-model="dateValue" type="date" placeholder="选择日期" style="width: 200px;"></el-date-picker>
-            <el-date-picker-panel v-model="dateValue" />
           </div>
         </section>
 
@@ -331,6 +330,103 @@
             </el-popconfirm>
           </div>
         </section>
+
+        <!-- 主题色查看 -->
+        <section class="test-section">
+          <h2>主题色查看</h2>
+          <div class="theme-colors">
+            <div class="theme-color-item">
+              <h3>默认主题</h3>
+              <div class="color-grid">
+                <div class="color-item" style="background-color: var(--ep-color-primary)">primary</div>
+                <div class="color-item" style="background-color: var(--ep-color-primary-light-3)">light-3</div>
+                <div class="color-item" style="background-color: var(--ep-color-primary-light-5)">light-5</div>
+                <div class="color-item" style="background-color: var(--ep-color-primary-light-7)">light-7</div>
+                <div class="color-item" style="background-color: var(--ep-color-primary-light-8)">light-8</div>
+                <div class="color-item" style="background-color: var(--ep-color-primary-light-9)">light-9</div>
+                <div class="color-item" style="background-color: var(--ep-color-primary-dark-2)">dark-2</div>
+              </div>
+            </div>
+            
+            <div class="theme-color-item">
+              <h3>绿色主题</h3>
+              <div class="color-grid" data-theme="green">
+                <div class="color-item" style="background-color: #67C23A">primary</div>
+                <div class="color-item" style="background-color: #a8da8c">light-3</div>
+                <div class="color-item" style="background-color: #d9edc7">light-5</div>
+                <div class="color-item" style="background-color: #85ce61">light-7</div>
+                <div class="color-item" style="background-color: #95d475">light-8</div>
+                <div class="color-item" style="background-color: #c0e1a6">light-9</div>
+                <div class="color-item" style="background-color: #3d7a22">dark-2</div>
+              </div>
+            </div>
+            
+            <div class="theme-color-item">
+              <h3>紫色主题</h3>
+              <div class="color-grid" data-theme="purple">
+                <div class="color-item" style="background-color: #9c27b0">primary</div>
+                <div class="color-item" style="background-color: #ce93d8">light-3</div>
+                <div class="color-item" style="background-color: #f3e5f5">light-5</div>
+                <div class="color-item" style="background-color: #ab47bc">light-7</div>
+                <div class="color-item" style="background-color: #ba68c8">light-8</div>
+                <div class="color-item" style="background-color: #e1bee7">light-9</div>
+                <div class="color-item" style="background-color: #6a1b9a">dark-2</div>
+              </div>
+            </div>
+            
+            <div class="theme-color-item">
+              <h3>阻塞主题</h3>
+              <div class="color-grid" data-theme="blocked">
+                <div class="color-item" style="background-color: #607d8b">primary</div>
+                <div class="color-item" style="background-color: #b0bec5">light-3</div>
+                <div class="color-item" style="background-color: #eceff1">light-5</div>
+                <div class="color-item" style="background-color: #78909c">light-7</div>
+                <div class="color-item" style="background-color: #90a4ae">light-8</div>
+                <div class="color-item" style="background-color: #cfd8dc">light-9</div>
+                <div class="color-item" style="background-color: #37474f">dark-2</div>
+              </div>
+            </div>
+            
+            <div class="theme-color-item">
+              <h3>橙色主题</h3>
+              <div class="color-grid" data-theme="orange">
+                <div class="color-item" style="background-color: #E6A23C">primary</div>
+                <div class="color-item" style="background-color: #f3d199">light-3</div>
+                <div class="color-item" style="background-color: #fdf6e8">light-5</div>
+                <div class="color-item" style="background-color: #ebb563">light-7</div>
+                <div class="color-item" style="background-color: #f0c07c">light-8</div>
+                <div class="color-item" style="background-color: #f9e2c0">light-9</div>
+                <div class="color-item" style="background-color: #ad721c">dark-2</div>
+              </div>
+            </div>
+            
+            <div class="theme-color-item">
+              <h3>金色主题</h3>
+              <div class="color-grid" data-theme="gold">
+                <div class="color-item" style="background-color: #D4B16A">primary</div>
+                <div class="color-item" style="background-color: #edcfac">light-3</div>
+                <div class="color-item" style="background-color: #fcf5eb">light-5</div>
+                <div class="color-item" style="background-color: #deb887">light-7</div>
+                <div class="color-item" style="background-color: #e6c597">light-8</div>
+                <div class="color-item" style="background-color: #f5e6d0">light-9</div>
+                <div class="color-item" style="background-color: #9c7330">dark-2</div>
+              </div>
+            </div>
+            
+            <div class="theme-color-item">
+              <h3>红色主题</h3>
+              <div class="color-grid" data-theme="red">
+                <div class="color-item" style="background-color: #F56C6C">primary</div>
+                <div class="color-item" style="background-color: #f9bebe">light-3</div>
+                <div class="color-item" style="background-color: #fceeee">light-5</div>
+                <div class="color-item" style="background-color: #f78989">light-7</div>
+                <div class="color-item" style="background-color: #f8a4a4">light-8</div>
+                <div class="color-item" style="background-color: #fad9d9">light-9</div>
+                <div class="color-item" style="background-color: #d34545">dark-2</div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </el-config-provider>
@@ -560,5 +656,50 @@ const handleCancel = () => {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+}
+
+.theme-colors {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.theme-color-item {
+  border: 1px solid var(--ep-border-color);
+  border-radius: var(--ep-border-radius-base);
+  padding: 15px;
+  background-color: var(--ep-bg-color);
+}
+
+.theme-color-item h3 {
+  color: var(--ep-text-color-primary);
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.color-item {
+  width: 100%;
+  height: 60px;
+  border-radius: var(--ep-border-radius-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.color-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ep-box-shadow);
 }
 </style>
