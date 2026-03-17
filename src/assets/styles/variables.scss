@@ -85,7 +85,7 @@ html.dark {
 }
 
 /* 绿色主题 */
-.theme-green {
+[data-theme="green"] {
   --ep-color-primary: #67C23A;
   --ep-color-primary-light-1: #85ce61;
   --ep-color-primary-light-2: #95d475;
@@ -99,7 +99,7 @@ html.dark {
 }
 
 /* 紫色主题 */
-.theme-purple {
+[data-theme="purple"] {
   --ep-color-primary: #9c27b0;
   --ep-color-primary-light-1: #ab47bc;
   --ep-color-primary-light-2: #ba68c8;
@@ -113,7 +113,7 @@ html.dark {
 }
 
 /* 阻塞主题 */
-.theme-blocked {
+[data-theme="blocked"] {
   --ep-color-primary: #607d8b;
   --ep-color-primary-light-1: #78909c;
   --ep-color-primary-light-2: #90a4ae;
@@ -127,7 +127,7 @@ html.dark {
 }
 
 /* 橙色主题 */
-.theme-orange {
+[data-theme="orange"] {
   --ep-color-primary: #E6A23C;
   --ep-color-primary-light-1: #ebb563;
   --ep-color-primary-light-2: #f0c07c;
@@ -141,7 +141,7 @@ html.dark {
 }
 
 /* 金色主题 */
-.theme-gold {
+[data-theme="gold"] {
   --ep-color-primary: #D4B16A;
   --ep-color-primary-light-1: #deb887;
   --ep-color-primary-light-2: #e6c597;
@@ -155,7 +155,7 @@ html.dark {
 }
 
 /* 红色主题 */
-.theme-red {
+[data-theme="red"] {
   --ep-color-primary: #F56C6C;
   --ep-color-primary-light-1: #f78989;
   --ep-color-primary-light-2: #f8a4a4;

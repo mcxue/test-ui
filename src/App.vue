@@ -1,17 +1,18 @@
 <template>
   <el-config-provider namespace="ep">
-    <div :class="currentTheme" class="app-container">
+    <div class="app-container">
       <header class="app-header">
         <h1>TEST UI 主题调试</h1>
         <div class="theme-selector">
           <span>选择主题：</span>
           <el-radio-group v-model="currentTheme" size="large">
-            <el-radio-button label="">蓝色</el-radio-button>
-            <el-radio-button label="theme-green">绿色</el-radio-button>
-            <el-radio-button label="theme-purple">紫色</el-radio-button>
-            <el-radio-button label="theme-orange">橙色</el-radio-button>
-            <el-radio-button label="theme-gold">金色</el-radio-button>
-            <el-radio-button label="theme-red">红色</el-radio-button>
+            <el-radio-button label="">默认</el-radio-button>
+            <el-radio-button label="blue">蓝色</el-radio-button>
+            <el-radio-button label="green">绿色</el-radio-button>
+            <el-radio-button label="purple">紫色</el-radio-button>
+            <el-radio-button label="orange">橙色</el-radio-button>
+            <el-radio-button label="gold">金色</el-radio-button>
+            <el-radio-button label="red">红色</el-radio-button>
           </el-radio-group>
           <div class="dark-mode-toggle">
             <el-switch v-model="isDarkMode" @change="toggleDarkMode" size="large"></el-switch>
@@ -72,6 +73,7 @@
           <h2>Date Picker 日期选择器</h2>
           <div class="component-group">
             <el-date-picker v-model="dateValue" type="date" placeholder="选择日期" style="width: 200px;"></el-date-picker>
+            <el-date-picker-panel v-model="dateValue" />
           </div>
         </section>
 
@@ -181,7 +183,7 @@
           <h2>Backtop 回到顶部</h2>
           <div class="component-group">
             <el-backtop :right="40" :bottom="40"></el-backtop>
-            <p style="height: 200px; background-color: var(--ep-bg-color-page);"></p>
+            <div>滚动后查看右下角</div>
           </div>
         </section>
 
@@ -335,7 +337,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { ArrowDown } from '@element-plus/icons-vue'
 
@@ -345,6 +347,22 @@ const isDarkMode = ref(false)
 // 初始化暗黑模式状态
 onMounted(() => {
   isDarkMode.value = document.documentElement.classList.contains('dark')
+  // 初始化主题
+  updateBodyTheme()
+})
+
+// 更新 body 主题属性
+const updateBodyTheme = () => {
+  if (currentTheme.value) {
+    document.documentElement.setAttribute('data-theme', currentTheme.value)
+  } else {
+    document.documentElement.removeAttribute('data-theme')
+  }
+}
+
+// 监听主题变化
+watch(currentTheme, () => {
+  updateBodyTheme()
 })
 
 // 切换暗黑模式
