@@ -1,12 +1,12 @@
 :root {
   /* 默认主题 - 蓝色 */
   --ep-color-primary: #409EFF;
-  --ep-color-primary-light-3: #B3D8FF;
-  --ep-color-primary-light-5: #E6F7FF;
-  --ep-color-primary-light-7: #66B1FF;
-  --ep-color-primary-light-8: #8CC5FF;
-  --ep-color-primary-light-9: #D9ECFF;
-  --ep-color-primary-dark-2: #2666B3;
+  --ep-color-primary-light-3: #79BBFF;
+  --ep-color-primary-light-5: #A0CFFF;
+  --ep-color-primary-light-7: #C6E2FF;
+  --ep-color-primary-light-8: #D9ECFF;
+  --ep-color-primary-light-9: #ECF5FF;
+  --ep-color-primary-dark-2: #337ECC;
   --ep-color-success: #67C23A;
   --ep-color-warning: #E6A23C;
   --ep-color-danger: #F56C6C;
@@ -43,12 +43,12 @@
 /* 暗黑模式 */
 html.dark {
   --ep-color-primary: #409EFF;
-  --ep-color-primary-light-3: #B3D8FF;
-  --ep-color-primary-light-5: #E6F7FF;
-  --ep-color-primary-light-7: #66B1FF;
-  --ep-color-primary-light-8: #8CC5FF;
-  --ep-color-primary-light-9: #D9ECFF;
-  --ep-color-primary-dark-2: #2666B3;
+  --ep-color-primary-light-3: #3375B9;
+  --ep-color-primary-light-5: #2A598A;
+  --ep-color-primary-light-7: #213D5B;
+  --ep-color-primary-light-8: #D9ECFF;
+  --ep-color-primary-light-9: #1D3043;
+  --ep-color-primary-dark-2: #18222B;
   --ep-color-success: #67C23A;
   --ep-color-warning: #E6A23C;
   --ep-color-danger: #F56C6C;
@@ -81,65 +81,56 @@ html.dark {
 /* 绿色主题 */
 [data-theme="green"] {
   --ep-color-primary: #67C23A;
-  --ep-color-primary-light-3: #a8da8c;
-  --ep-color-primary-light-5: #d9edc7;
-  --ep-color-primary-light-7: #85ce61;
-  --ep-color-primary-light-8: #95d475;
-  --ep-color-primary-light-9: #c0e1a6;
+  --ep-color-primary-light-3: #85ce61;
+  --ep-color-primary-light-5: #95d475;
+  --ep-color-primary-light-7: #a8da8c;
+  --ep-color-primary-light-8: #c0e1a6;
+  --ep-color-primary-light-9: #d9edc7;
   --ep-color-primary-dark-2: #3d7a22;
 }
 
 /* 紫色主题 */
 [data-theme="purple"] {
   --ep-color-primary: #9c27b0;
-  --ep-color-primary-light-3: #ce93d8;
-  --ep-color-primary-light-5: #f3e5f5;
-  --ep-color-primary-light-7: #ab47bc;
-  --ep-color-primary-light-8: #ba68c8;
-  --ep-color-primary-light-9: #e1bee7;
+  --ep-color-primary-light-3: #ab47bc;
+  --ep-color-primary-light-5: #ba68c8;
+  --ep-color-primary-light-7: #ce93d8;
+  --ep-color-primary-light-8: #e1bee7;
+  --ep-color-primary-light-9: #f3e5f5;
   --ep-color-primary-dark-2: #6a1b9a;
 }
 
-/* 阻塞主题 */
-[data-theme="blocked"] {
-  --ep-color-primary: #607d8b;
-  --ep-color-primary-light-3: #b0bec5;
-  --ep-color-primary-light-5: #eceff1;
-  --ep-color-primary-light-7: #78909c;
-  --ep-color-primary-light-8: #90a4ae;
-  --ep-color-primary-light-9: #cfd8dc;
-  --ep-color-primary-dark-2: #37474f;
-}
+
 
 /* 橙色主题 */
 [data-theme="orange"] {
   --ep-color-primary: #E6A23C;
-  --ep-color-primary-light-3: #f3d199;
-  --ep-color-primary-light-5: #fdf6e8;
-  --ep-color-primary-light-7: #ebb563;
-  --ep-color-primary-light-8: #f0c07c;
-  --ep-color-primary-light-9: #f9e2c0;
+  --ep-color-primary-light-3: #ebb563;
+  --ep-color-primary-light-5: #f0c07c;
+  --ep-color-primary-light-7: #f3d199;
+  --ep-color-primary-light-8: #f9e2c0;
+  --ep-color-primary-light-9: #fdf6e8;
   --ep-color-primary-dark-2: #ad721c;
 }
 
 /* 金色主题 */
 [data-theme="gold"] {
   --ep-color-primary: #D4B16A;
-  --ep-color-primary-light-3: #edcfac;
-  --ep-color-primary-light-5: #fcf5eb;
-  --ep-color-primary-light-7: #deb887;
-  --ep-color-primary-light-8: #e6c597;
-  --ep-color-primary-light-9: #f5e6d0;
+  --ep-color-primary-light-3: #deb887;
+  --ep-color-primary-light-5: #e6c597;
+  --ep-color-primary-light-7: #edcfac;
+  --ep-color-primary-light-8: #f5e6d0;
+  --ep-color-primary-light-9: #fcf5eb;
   --ep-color-primary-dark-2: #9c7330;
 }
 
 /* 红色主题 */
 [data-theme="red"] {
   --ep-color-primary: #F56C6C;
-  --ep-color-primary-light-3: #f9bebe;
-  --ep-color-primary-light-5: #fceeee;
-  --ep-color-primary-light-7: #f78989;
-  --ep-color-primary-light-8: #f8a4a4;
-  --ep-color-primary-light-9: #fad9d9;
+  --ep-color-primary-light-3: #f78989;
+  --ep-color-primary-light-5: #f8a4a4;
+  --ep-color-primary-light-7: #f9bebe;
+  --ep-color-primary-light-8: #fad9d9;
+  --ep-color-primary-light-9: #fceeee;
   --ep-color-primary-dark-2: #d34545;
 }
